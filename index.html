@@ -9,11 +9,64 @@
 </head>
 
 <body>
+  <div class="O_Form">
+    <div class="A_FloatForm">
+      <div class="W_CloseBurgerOrder">
+        <div class="A_FormTitle">Зафиксировать клиента</div>
+        <div class="A_BurgerCloseButton">
+          <img class="Q_Cross"
+            src="https://optim.tildacdn.com/tild3832-3232-4461-a536-646564333339/-/resize/288x/-/format/webp/cross.png"
+            alt="">
+        </div>
+      </div>
+      <div class="W_FormBody">
+        <form class="W_Inputs" action="#" method="post">
+          <input type="text" id="client-name" name="client_name" placeholder="Фамилия Имя Отчество клиента*" required>
+
+          <input type="text" id="client-company" name="client_company"
+            placeholder="Наименование компании (при наличии)">
+
+          <input type="text" id="agent-name" name="agent_name" placeholder="Фамилия Имя Отчество агента*" required>
+
+          <input type="text" id="agent-company" name="agent_company"
+            placeholder="Наименование компании агента (при наличии)">
+
+          <input type="tel" id="agent-phone" name="agent_phone" placeholder="Телефон агента*" required>
+
+          <input type="email" id="agent-email" name="agent_email" placeholder="Электронная почта агента*" required>
+
+          <input type="text" id="request-area" name="request_area" placeholder="Площадь запроса*" required>
+
+          <input type="text" id="client-profile" name="client_profile" placeholder="Профиль компании - клиента">
+
+          <input type="text" id="space-type" name="space_type" placeholder="Тип запрашиваемого помещения*" required>
+
+          <input type="text" id="meeting-dates" name="meeting_dates" placeholder="Планируемые даты встречи с клиентом*"
+            required>
+          <div class="W_TosButton">
+            <div class="W_AgreeTOS">
+              <div class="W_MarkContainer">
+                <img class="A_Mark" src="https://static.tildacdn.com/tild6330-3338-4630-a436-386539623566/checkmark.svg"
+                  alt="">
+              </div>
+              <div class="W_AgreeText">
+                Соглашаюсь на обработку
+                <a target="_blank" href="https://kuvekino-prom.ru/privacypolicy">персональных данных</a>
+              </div>
+            </div>
+            <button class="A_Button U_NoIcon U_Primal" type="submit">Получить предложение <img class="Q_ButtonIcon"
+                src="https://optim.tildacdn.com/tild3139-6330-4438-b430-333664623766/-/resize/290x/-/format/webp/BtnIcon.png"
+                alt=""></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <div class="SO_Landing">
     <div class="O_Header">
       <img class="A_Logo" src="https://optim.tildacdn.com/tild3364-3236-4364-b734-326239306332/-/format/webp/Logo.png"
         alt="">
-      <a class="A_PhoneNumber">+7 495 169 96 10</a>
+      <a href="tel:+74951699610" class="A_PhoneNumber">+7 495 169 96 10</a>
     </div>
     <div class="W_FirstScreen">
       <div class="O_PageTitle">Кабинет брокера</div>
@@ -24,16 +77,20 @@
           src="https://optim.tildacdn.com/tild3133-6332-4362-b061-613533653437/-/format/webp/BrokerImageMobile.jpg"
           alt="">
         <div class="W_Buttons">
-          <a href="" class="A_Button U_NoIcon U_Primal">Зафиксировать клиента</a>
-          <a href="" class="A_Button U_NoIcon">Скачать презентацию о компании</a>
-          <a href="" class="A_Button U_NoIcon">Скачать прайс лист</a>
-          <a href="" class="A_Button U_NoIcon U_Mobile">позвонить в отдел продаж</a>
+          <div class="A_Button U_NoIcon U_Primal" id="OpenButton">Зафиксировать клиента</div>
+          <a target="_blank"
+            href="https://docs.yandex.ru/docs/view?url=ya-disk%3A%2F%2F%2Fdisk%2FПРОМОМАТЕРИАЛЫ%2FParametr_презентация_21.08.2024.pdf&name=Parametr_презентация_21.08.2024.pdf&uid=1130000064964030&nosw=1"
+            class="A_Button U_NoIcon">Скачать презентацию о компании</a>
+          <a target="_blank"
+            href="https://docs.yandex.ru/docs/view?url=ya-disk%3A%2F%2F%2Fdisk%2FКабинет брокера PARAMETR%2FParametr_vse proekty_19_08_24.pdf&name=Parametr_vse proekty_19_08_24.pdf&uid=1130000064964030"
+            class="A_Button U_NoIcon">Скачать прайс лист</a>
+          <a href="tel:+74951699610" class="A_Button U_NoIcon U_Mobile">позвонить в отдел продаж</a>
         </div>
       </div>
     </div>
     <div class="O_Projects">
       <div class="W_ProjectRow">
-        <div class="M_Project">
+        <div class="M_Project U_Left">
           <img class="A_ProjectImage"
             src="https://optim.tildacdn.com/tild6564-3130-4130-a562-393734373439/-/format/webp/KuvekinoProject.jpg"
             alt="">
@@ -53,15 +110,15 @@
               <div class="W_ProjectInfoSectionRow">
                 <div class="W_ProjectInfoSection">
                   <div class="A_SubTitle">Big box</div>
-                  <div class="A_SubTitle U_SecondaryGrey">от 5000м2</div>
+                  <div class="A_SubTitle U_SecondaryGrey">от 5000 м<sup>2</sup></div>
                 </div>
                 <div class="W_ProjectInfoSection">
                   <div class="A_SubTitle">light industrial</div>
-                  <div class="A_SubTitle U_SecondaryGrey">от 2500м2</div>
+                  <div class="A_SubTitle U_SecondaryGrey">от 2500 м<sup>2</sup></div>
                 </div>
                 <div class="W_ProjectInfoSection">
                   <div class="A_SubTitle">bts</div>
-                  <div class="A_SubTitle U_SecondaryGrey">от 4200м2</div>
+                  <div class="A_SubTitle U_SecondaryGrey">от 4200 м<sup>2</sup></div>
                 </div>
                 <div class="W_ProjectInfoSection U_LastItem">
                   <div class="A_SubTitle U_LastItem">срок готовности</div>
@@ -72,15 +129,17 @@
               </div>
             </div>
             <div class="W_ProjectInfoSection">
-              <a class="A_Button U_NoIcon U_Primal" href="">Перейти в папку проекта <img class="Q_ButtonIcon"
+              <a target="_blank" class="A_Button U_NoIcon U_Primal"
+                href="https://disk.yandex.ru/client/disk/Кабинет брокера PARAMETR/Промышленный парк Кувекино">Перейти в
+                папку проекта <img class="Q_ButtonIcon"
                   src="https://optim.tildacdn.com/tild3139-6330-4438-b430-333664623766/-/resize/290x/-/format/webp/BtnIcon.png"
                   alt=""></a>
             </div>
           </div>
         </div>
-        <div class="M_Project">
+        <div class="M_Project U_Right">
           <img class="A_ProjectImage"
-            src="https://optim.tildacdn.com/tild3431-3030-4739-a661-643431663434/-/format/webp/BalashihaProject.jpg"
+            src="https://optim.tildacdn.com/tild3536-3535-4136-b062-613861336565/-/format/webp/BalashihaProjectNew.jpg"
             alt="">
           <div class="W_ProjectInfo">
             <div class="W_ProjectTitleAndChars">
@@ -98,26 +157,26 @@
               <div class="W_ProjectInfoSectionRow">
                 <div class="W_ProjectInfoSection">
                   <div class="A_SubTitle">Big box</div>
-                  <div class="A_SubTitle U_SecondaryGrey">от 5000м2</div>
+                  <div class="A_SubTitle U_SecondaryGrey">от 5000 м<sup>2</sup></div>
                 </div>
                 <div class="W_ProjectInfoSection">
                   <div class="A_SubTitle">light industrial</div>
-                  <div class="A_SubTitle U_SecondaryGrey">от 2500м2</div>
+                  <div class="A_SubTitle U_SecondaryGrey">от 594 м<sup>2</sup></div>
                 </div>
                 <div class="W_ProjectInfoSection">
                   <div class="A_SubTitle">bts</div>
-                  <div class="A_SubTitle U_SecondaryGrey">от 4200м2</div>
+                  <div class="A_SubTitle U_SecondaryGrey">от 10000 м<sup>2</sup></div>
                 </div>
                 <div class="W_ProjectInfoSection U_LastItem">
                   <div class="A_SubTitle U_LastItem">срок готовности</div>
-                  <div class="A_SubTitle U_SecondaryGrey U_LastItem">light industrial - 3 кв. 2025,<br>big box - 2 кв.
-                    2025
+                  <div class="A_SubTitle U_SecondaryGrey U_LastItem">light industrial - 2 кв. 2026
                   </div>
                 </div>
               </div>
             </div>
             <div class="W_ProjectInfoSection">
-              <a class="A_Button U_NoIcon U_Primal" href="">Перейти в папку проекта <img class="Q_ButtonIcon"
+              <a target="_blank" class="A_Button U_NoIcon U_Primal" href="">Перейти в папку проекта <img
+                  class="Q_ButtonIcon"
                   src="https://optim.tildacdn.com/tild3139-6330-4438-b430-333664623766/-/resize/290x/-/format/webp/BtnIcon.png"
                   alt=""></a>
             </div>
@@ -125,7 +184,7 @@
         </div>
       </div>
       <div class="W_ProjectRow">
-        <div class="M_Project">
+        <div class="M_Project U_Left">
           <img class="A_ProjectImage"
             src="https://optim.tildacdn.com/tild3962-3763-4233-b562-303731343930/-/format/webp/SenkinoProject.jpg"
             alt="">
@@ -144,33 +203,30 @@
               </div>
               <div class="W_ProjectInfoSectionRow">
                 <div class="W_ProjectInfoSection">
-                  <div class="A_SubTitle">Big box</div>
-                  <div class="A_SubTitle U_SecondaryGrey">от 5000м2</div>
-                </div>
-                <div class="W_ProjectInfoSection">
                   <div class="A_SubTitle">light industrial</div>
-                  <div class="A_SubTitle U_SecondaryGrey">от 2500м2</div>
+                  <div class="A_SubTitle U_SecondaryGrey">от 580 м<sup>2</sup></div>
                 </div>
                 <div class="W_ProjectInfoSection">
                   <div class="A_SubTitle">bts</div>
-                  <div class="A_SubTitle U_SecondaryGrey">от 4200м2</div>
+                  <div class="A_SubTitle U_SecondaryGrey">от 9000 м<sup>2</sup></div>
                 </div>
                 <div class="W_ProjectInfoSection U_LastItem">
                   <div class="A_SubTitle U_LastItem">срок готовности</div>
-                  <div class="A_SubTitle U_SecondaryGrey U_LastItem">light industrial - 3 кв. 2025,<br>big box - 2 кв.
-                    2025
+                  <div class="A_SubTitle U_SecondaryGrey U_LastItem">2 очередь - осень 2025
                   </div>
                 </div>
               </div>
             </div>
             <div class="W_ProjectInfoSection">
-              <a class="A_Button U_NoIcon U_Primal" href="">Перейти в папку проекта <img class="Q_ButtonIcon"
+              <a target="_blank" class="A_Button U_NoIcon U_Primal"
+                href="https://disk.yandex.ru/client/disk/Кабинет брокера PARAMETR/Промышленный парк Сенькино">Перейти в
+                папку проекта <img class="Q_ButtonIcon"
                   src="https://optim.tildacdn.com/tild3139-6330-4438-b430-333664623766/-/resize/290x/-/format/webp/BtnIcon.png"
                   alt=""></a>
             </div>
           </div>
         </div>
-        <div class="M_Project">
+        <div class="M_Project U_Right">
           <img class="A_ProjectImage"
             src="https://optim.tildacdn.com/tild3538-6664-4430-b432-383432623430/-/format/webp/SokolovoProject.jpg"
             alt="">
@@ -190,26 +246,27 @@
               <div class="W_ProjectInfoSectionRow">
                 <div class="W_ProjectInfoSection">
                   <div class="A_SubTitle">Big box</div>
-                  <div class="A_SubTitle U_SecondaryGrey">от 5000м2</div>
+                  <div class="A_SubTitle U_SecondaryGrey">от 5000 м<sup>2</sup></div>
                 </div>
                 <div class="W_ProjectInfoSection">
                   <div class="A_SubTitle">light industrial</div>
-                  <div class="A_SubTitle U_SecondaryGrey">от 2500м2</div>
+                  <div class="A_SubTitle U_SecondaryGrey">от 580 м<sup>2</sup></div>
                 </div>
                 <div class="W_ProjectInfoSection">
                   <div class="A_SubTitle">bts</div>
-                  <div class="A_SubTitle U_SecondaryGrey">от 4200м2</div>
+                  <div class="A_SubTitle U_SecondaryGrey">от 10000 м<sup>2</sup></div>
                 </div>
                 <div class="W_ProjectInfoSection U_LastItem">
                   <div class="A_SubTitle U_LastItem">срок готовности</div>
-                  <div class="A_SubTitle U_SecondaryGrey U_LastItem">light industrial - 3 кв. 2025,<br>big box - 2 кв.
-                    2025
+                  <div class="A_SubTitle U_SecondaryGrey U_LastItem">1 очередь - 4 кв. 2026
                   </div>
                 </div>
               </div>
             </div>
             <div class="W_ProjectInfoSection">
-              <a class="A_Button U_NoIcon U_Primal" href="">Перейти в папку проекта <img class="Q_ButtonIcon"
+              <a target="_blank" class="A_Button U_NoIcon U_Primal"
+                href="https://disk.yandex.ru/client/disk/Кабинет брокера PARAMETR/Промышленный парк Соколово">Перейти в
+                папку проекта <img class="Q_ButtonIcon"
                   src="https://optim.tildacdn.com/tild3139-6330-4438-b430-333664623766/-/resize/290x/-/format/webp/BtnIcon.png"
                   alt=""></a>
             </div>
@@ -218,10 +275,10 @@
       </div>
     </div>
     <div class="W_ProjectRow U_LightGrayBackground">
-      <div class="W_HalfRow">
+      <div class="W_HalfRow U_Left">
         <div class="A_SecondLevelTitle">Условия сотрудничества</div>
       </div>
-      <div class="W_HalfRow">
+      <div class="W_HalfRow U_Right">
         <a href="" class="A_Button U_NoIcon">Регламент сотрудничества</a>
         <a href="" class="A_Button U_NoIcon">Правила размещения информационных материалов</a>
       </div>
